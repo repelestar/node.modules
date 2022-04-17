@@ -1,4 +1,4 @@
-const {readFile} = require('fs');
+const { readFile } = require('fs');
 const express = require('express');
 
 const app = express()
@@ -10,7 +10,6 @@ app.get('/', (request, response) => {
 		if (err) {
 			response.status(500).send('sorry, out of order')
 		}
-
 		response.send(html);
 	})
 });
